@@ -1,0 +1,36 @@
+---
+// src/pages/servicios.astro
+
+import Layout from '../layouts/Layout.astro';
+import ServicesGrid from '../components/ServicesGrid.astro'; 
+---
+<Layout 
+    title="Nuestros Servicios | [Tu Empresa]" 
+    description="Descubre en detalle la gama completa de servicios de desarrollo web, IA y optimización de rendimiento que ofrecemos."
+>
+    <section class="bg-indigo-700 text-white py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                Servicios a la Medida
+            </h1>
+            <p class="mt-4 text-xl opacity-80 max-w-3xl mx-auto">
+                Transformamos tus ideas en soluciones digitales de alto rendimiento. Explora nuestras áreas de especialización.
+            </p>
+        </div>
+    </section>
+
+    <ServicesGrid />
+
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold text-gray-900">¿Listo para empezar tu proyecto?</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Agenda una consulta gratuita para discutir tus necesidades específicas.
+            </p>
+            <a href="/contacto" class="mt-6 inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 transition duration-300">
+                Contáctanos Ahora
+            </a>
+        </div>
+    </section>
+
+</Layout>
