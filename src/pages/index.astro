@@ -1,11 +1,20 @@
 ---
-import Welcome from '../components/Welcome.astro';
+// 1. Importa el Layout que acabamos de crear
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<Layout title="Inicio | [Tu Empresa]" description="La mejor solución para [tu industria/servicio]. Conócenos y contáctanos hoy.">
+	
+	<section class="py-20 text-center">
+		<h1 class="text-5xl font-extrabold text-gray-900 mb-4">
+			Tu Propuesta de Valor Única
+		</h1>
+		<p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+			Ofrecemos soluciones tecnológicas modernas, rápidas y escalables para hacer crecer tu negocio.
+		</p>
+		<a href="/contacto" class="bg-indigo-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-indigo-700 transition duration-300">
+			¡Comienza Hoy!
+		</a>
+	</section>
+	
+	</Layout>

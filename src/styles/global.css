@@ -1,1 +1,8 @@
 @import "tailwindcss";
+/* src/styles/global.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aquí puedes añadir tus propios estilos CSS si es necesario */
