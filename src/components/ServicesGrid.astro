@@ -3,7 +3,8 @@ const services = [
   {
     title: "Capacitación: Acelera la Productividad",
     description: "Transformamos equipos con Workshops y Programas Corporativos enfocados en habilidades de vanguardia (IA, Desarrollo Ágil y Colaboración) para impulsar la eficiencia desde el interior de su organización.",
-    icon: "🎓" 
+    icon: "🎓", 
+    href: "/capacitacion"
   },
   {
     title: "Consultoría en Agilidad: Entrega de Valor Continua",
@@ -46,7 +47,7 @@ const services = [
           </p>
 
           <div class="mt-4">
-            <a href="/servicios#detalle" class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
+            <a href={service.href} class="text-indigo-600 hover:text-indigo-800 font-medium text-sm">
               Saber más &rarr;
             </a>
           </div>

@@ -1,0 +1,112 @@
+---
+// src/pages/capacitacion.astro
+
+import Layout from '../layouts/Layout.astro';
+// Define el contenido de los beneficios y pilares en el frontmatter para facilitar la edición
+const beneficios = [
+  {
+    title: "Reducción del Time-to-Market",
+    description: "Entregue productos y servicios más rápido, eliminando cuellos de botella y trabajo redundante mediante la optimización de procesos ágiles.",
+    icon: "⏱️" 
+  },
+  {
+    title: "Adopción Tecnológica Acelerada",
+    description: "Preparamos a sus colaboradores para dominar las últimas herramientas (IA Generativa, Automatización) y maximizar la inversión en tecnología.",
+    icon: "💡"
+  },
+  {
+    title: "Cultura de Alto Rendimiento",
+    description: "Fomentamos la autogestión y la responsabilidad compartida, creando equipos que se adaptan rápidamente a los cambios del mercado.",
+    icon: "🤝"
+  },
+  {
+    title: "Retención de Talento",
+    description: "Muestre a su equipo que valora su crecimiento profesional, aumentando la satisfacción laboral y reduciendo la rotación.",
+    icon: "🌟"
+  },
+];
+---
+
+<Layout 
+    title="Capacitación Empresarial | Acelera la Productividad" 
+    description="Workshops y programas corporativos enfocados en Agilidad, IA y herramientas de colaboración para impulsar la eficiencia desde el interior."
+>
+    <section class="bg-gray-900 text-white py-20 sm:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                De la Inercia a la Innovación: Programas Corporativos que Transforman
+            </h1>
+            <p class="mt-4 text-xl opacity-80 max-w-3xl mx-auto">
+                Llevamos la productividad de su equipo al **siguiente nivel** con **Workshops personalizados** en Agilidad, IA y herramientas de colaboración.
+            </p>
+            <a href="#catalogo" class="mt-8 inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md shadow-lg text-gray-900 bg-green-400 hover:bg-green-500 transition duration-300">
+                Solicitar Catálogo de Cursos
+            </a>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Beneficios Inmediatos de la Capacitación</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {beneficios.map((item) => (
+                    <div class="bg-white p-6 rounded-lg shadow-xl border-t-4 border-indigo-600">
+                        <div class="text-3xl mb-4">{item.icon}</div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
+                        <p class="text-gray-600">{item.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </section>
+    
+    <section id="catalogo" class="bg-indigo-50 py-16 sm:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold text-indigo-800 text-center mb-12">Nuestros Pilares de Formación</h2>
+            
+            <div class="space-y-12">
+                <div class="bg-white p-8 rounded-lg shadow-2xl lg:flex lg:items-start">
+                    <div class="lg:w-1/3">
+                        <span class="text-indigo-600 font-semibold uppercase text-sm">Pilar 1</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-2 mb-4">Workshops Intensivos y Enfocados</h3>
+                        <p class="text-lg text-gray-600">Diseñados para un impacto rápido y la aplicación inmediata de habilidades específicas y de alto valor.</p>
+                    </div>
+                    <div class="lg:w-2/3 lg:pl-12 mt-6 lg:mt-0">
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <div>**IA para la Productividad:** Taller práctico sobre el uso de herramientas de IA Generativa para optimizar tareas.</div></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <div>**Desarrollo Ágil Práctico:** Principios de Scrum y Kanban, enfocados en la priorización y planificación de sprints.</div></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">✅</span> <div>**Herramientas Colaborativas:** Sesiones avanzadas para transformar el email y las reuniones en flujos de trabajo eficientes.</div></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-2xl lg:flex lg:items-start">
+                    <div class="lg:w-1/3">
+                        <span class="text-indigo-600 font-semibold uppercase text-sm">Pilar 2</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-2 mb-4">Programas Corporativos a Medida</h3>
+                        <p class="text-lg text-gray-600">Soluciones integrales tras una consultoría inicial, abordando brechas de conocimiento específicas en su organización.</p>
+                    </div>
+                    <div class="lg:w-2/3 lg:pl-12 mt-6 lg:mt-0">
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">🎯</span> <div>**Diagnóstico Inicial:** Evaluación de la madurez tecnológica o ágil de su equipo para un currículo único.</div></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">🎯</span> <div>**Ruta Personalizada:** Creación de un currículo único con módulos, evaluaciones y coaching post-curso.</div></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 text-xl">🎯</span> <div>**Resultados Medibles:** Establecemos KPIs claros para demostrar el Retorno de Inversión (ROI) de la formación.</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-gray-900">¿Cómo Empezar a Transformar su Equipo?</h2>
+            <p class="mt-4 text-lg text-gray-600">Un experto en transformación se reunirá contigo para entender los desafíos únicos de tu organización y diseñar una solución de capacitación precisa.</p>
+            <a href="/contacto" class="mt-8 inline-flex items-center justify-center px-10 py-4 border border-transparent text-base font-medium rounded-md shadow-lg text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300">
+                Agenda tu Diagnóstico Gratuito
+            </a>
+        </div>
+    </section>
+
+</Layout>
